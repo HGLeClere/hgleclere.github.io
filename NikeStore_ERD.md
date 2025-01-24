@@ -3,27 +3,31 @@
 
 ```mermaid
 erDiagram
-    CUSTOMER ||--o{ SALES
-    CUSTOMER {
-        PK ID
-        Key name
-        Key address   
-    }
-    SALES ||--|{ Product
-    SALES {
-        PK ID
-        Key orderNumber
-        FK Product_ID
-    }
-    Product ||--|{ Inventory
-    Product {
-        PK Product_ID
-        Key Size
-        Key Color
-    }
-    Inventory ||--o{ Product
-    Inventory {
-        FK Product_ID
-        Key NumberInStock
-    }
+
+product ||--o{ sales : output_to_store
+
+product { 
+    Primary_Key Product_ID
+    Key Color
+    Key Size
+ 
+}
+
+customer |{--|{ sales : orders
+customer {
+    Primary_Key Cust_ID
+    Key Name
+    Key PhoneNumber
+}
+sales {
+    Primary_Key Sales_ID
+    Key OrderNumber
+    Key Date
+    Key AmountOfSale
+}
+inventory o{--o| product : in_stock
+inventory {
+    Primary_Key Product_ID
+    Key NumberInStock
+}
 ```
