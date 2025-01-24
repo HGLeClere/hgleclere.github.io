@@ -1,11 +1,14 @@
+
+#Nike Store Entity Relationship Diagram 
+
 ```mermaid
 erDiagram
-PRODUCT {
+PRODUCT |<--|<{ SALE
 }
-CUSTOMER {
+CUSTOMER ||--|<{ SALE
 }
-SALE {
+SALE 0<--0<{ Inventory
 }
-INVENTORY {
+INVENTORY 0<--||{
 }
 ```
