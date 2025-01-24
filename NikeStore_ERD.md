@@ -3,12 +3,12 @@
 
 ```mermaid
 erDiagram
-PRODUCT |<--|< SALE
+ PRODUCT |<--|< SALE
 
-CUSTOMER ||--|< SALE
+ CUSTOMER ||--|< SALE
 
-SALE 0<--0< Inventory
+ SALE 0<--0< Inventory
 
-INVENTORY 0<--||
+ INVENTORY 0<--||PRODUCT
 
 ```
