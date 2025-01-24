@@ -3,7 +3,7 @@
 
 ```mermaid
 erDiagram
- PRODUCT |<--|< SALE
+ PRODUCT |<--<| SALE
 
  CUSTOMER ||--|< SALE
 
