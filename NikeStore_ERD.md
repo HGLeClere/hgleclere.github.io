@@ -7,8 +7,7 @@ erDiagram
     CUSTOMER {
         PK ID
         Key name
-        Key address
-        
+        Key address   
     }
     SALES ||--|{ Product
     SALES {
