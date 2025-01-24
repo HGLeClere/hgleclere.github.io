@@ -1,5 +1,5 @@
 
-#Nike Store Entity Relationship Diagram 
+# Nike Store Entity Relationship Diagram 
 
 ```mermaid
 erDiagram
